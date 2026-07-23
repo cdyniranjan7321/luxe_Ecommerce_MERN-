@@ -102,7 +102,7 @@ Serve `frontend/dist` with any static host (Vercel/Netlify) and deploy
 | GET    | /api/orders                   | All orders                  | Admin      |
 | PUT    | /api/orders/:id/status        | Update order status          | Admin      |
 
-## Notes / next steps you may want to add
+## Notes: next steps to add following
 
 - Real payment integration (Stripe/Razorpay) — currently payment method is just recorded, not processed
 - Image uploads (Cloudinary/S3) instead of pasting image URLs in the admin form

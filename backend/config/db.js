@@ -2,10 +2,16 @@ import mongoose from "mongoose";
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI);
-    console.log(`MongoDB connected: ${conn.connection.host}`);
+    const conn = await mongoose.connect(process.env.MONGO_URI, {
+      // These options are no longer needed in newer versions of Mongoose
+      // but keeping them for compatibility
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    
+    console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
-    console.error(`Error connecting to MongoDB: ${error.message}`);
+    console.error(`Error: ${error.message}`);
     process.exit(1);
   }
 };

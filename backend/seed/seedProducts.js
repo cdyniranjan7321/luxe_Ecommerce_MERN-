@@ -1,10 +1,9 @@
-// Run with: node seed/seedProducts.js
+
 import dotenv from "dotenv";
 import connectDB from "../config/db.js";
 import Product from "../models/Product.js";
 
 dotenv.config();
-connectDB();
 
 const products = [
   {
@@ -57,14 +56,27 @@ const products = [
 
 const importData = async () => {
   try {
-    await Product.deleteMany();
-    await Product.insertMany(products);
-    console.log("Sample products imported!");
-    process.exit();
+    // Connect to database first
+    await connectDB();
+    
+    // Delete existing products
+    const deleted = await Product.deleteMany({});
+    console.log(`Products removed: ${deleted.deletedCount || 0}`);
+    
+    // Insert new products
+    const inserted = await Product.insertMany(products);
+    console.log(`${inserted.length} sample products imported successfully!`);
+    
+    // Exit with success
+    process.exit(0);
   } catch (error) {
-    console.error(error);
+    console.error(`Error: ${error.message}`);
+    if (error.name === 'ValidationError') {
+      console.error('Validation Error Details:', error.errors);
+    }
     process.exit(1);
   }
 };
 
+// Run the import
 importData();

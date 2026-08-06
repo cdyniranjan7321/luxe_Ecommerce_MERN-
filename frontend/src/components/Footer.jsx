@@ -4,7 +4,7 @@ export default function Footer() {
     <footer className="bg-brand text-white mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <h3 className="font-heading text-xl mb-3">LUXE</h3>
+          <h3 className="font-heading text-xl mb-3">RASA</h3>
           <p className="text-sm text-gray-300">
             Contemporary clothing for every occasion. Quality fabrics, timeless design.
           </p>
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center text-xs text-gray-400 py-4 border-t border-gray-700">
-        © {new Date().getFullYear()} LUXE. All rights reserved.
+        © {new Date().getFullYear()} RASA. All rights reserved.
       </div>
     </footer>
   );

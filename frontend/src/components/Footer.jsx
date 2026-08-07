@@ -1,4 +1,3 @@
-
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Footer() {
@@ -59,28 +58,14 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        
         <div>
           <h4 className="font-semibold mb-3">Support</h4>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li>
-              <Link to="/contact" className="hover:text-white transition-colors">
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link to="/shipping-returns" className="hover:text-white transition-colors">
-                Shipping & Returns
-              </Link>
-            </li>
-            <li>
-              <Link to="/faq" className="hover:text-white transition-colors">
-                FAQ
-              </Link>
-            </li>
+            <li>Contact Us</li>
+            <li>Shipping & Returns</li>
+            <li>FAQ</li>
           </ul>
         </div>
-        
         <div>
           <h4 className="font-semibold mb-3">Newsletter</h4>
           <p className="text-sm text-gray-300 mb-3">Get 10% off your first order.</p>
@@ -91,7 +76,6 @@ export default function Footer() {
           />
         </div>
       </div>
-      
       <div className="text-center text-xs text-gray-400 py-4 border-t border-gray-700">
         © {new Date().getFullYear()} RASA. All rights reserved.
       </div>

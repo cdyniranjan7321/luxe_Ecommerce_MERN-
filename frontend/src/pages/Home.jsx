@@ -106,31 +106,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Categories Section */}
-<section className="py-16 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-heading text-center mb-4">Shop by Category</h2>
-    <p className="text-gray-500 text-center mb-10">Find what you're looking for</p>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-      {[
-        { name: "Men's Fashion", icon: "👔", color: "bg-blue-100" },
-        { name: "Women's Fashion", icon: "👗", color: "bg-pink-100" },
-        { name: "Accessories", icon: "👜", color: "bg-purple-100" },
-        { name: "Footwear", icon: "👟", color: "bg-green-100" },
-      ].map((category, index) => (
-        <Link
-          key={index}
-          to={`/?category=${category.name}`}
-          className={`${category.color} p-6 rounded-lg text-center hover:shadow-lg transition transform hover:-translate-y-1`}
-        >
-          <div className="text-4xl mb-2">{category.icon}</div>
-          <h3 className="font-semibold">{category.name}</h3>
-        </Link>
-      ))}
-    </div>
-  </div>
-</section>
-
       {/* Brands Section */}
       <section className="py-16 bg-gray-50 border-t border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -150,33 +125,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Special Offers Banner */}
-<section className="py-16">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="bg-gradient-to-r from-brand to-brand-dark rounded-2xl p-8 md:p-12 text-white">
-      <div className="grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <span className="inline-block bg-accent/20 text-accent-light px-4 py-1 rounded-full text-sm font-medium mb-4">
-            Limited Time Offer
-          </span>
-          <h2 className="text-3xl md:text-4xl font-heading mb-3">Summer Sale Up to 50% Off</h2>
-          <p className="text-gray-200 mb-6">Don't miss out on our biggest sale of the season. Exclusive deals on top brands.</p>
-          <Link
-            to="/products"
-            className="inline-block bg-white text-brand px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition"
-          >
-            Shop Sale
-          </Link>
-        </div>
-        <div className="text-center md:text-right">
-          <div className="text-6xl md:text-8xl">☀️</div>
-          <p className="text-sm opacity-80 mt-2">Ends in 2 weeks</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
       {/* Testimonials Section */}
       <section className="py-16">

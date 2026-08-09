@@ -143,7 +143,7 @@ export default function Home() {
           ))}
          </div>
         </div>
-</section>
+       </section>
 
       {/* Testimonials Section */}
       <section className="py-16">

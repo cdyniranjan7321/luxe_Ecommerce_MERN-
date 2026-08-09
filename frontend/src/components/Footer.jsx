@@ -71,6 +71,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Newsletter</h4>
           <p className="text-sm text-gray-300 mb-3">Get 10% off your first order.</p>
+          
           {/* <input
             type="email"
             placeholder="Your email"

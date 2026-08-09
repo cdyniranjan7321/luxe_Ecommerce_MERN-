@@ -71,13 +71,14 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Newsletter</h4>
           <p className="text-sm text-gray-300 mb-3">Get 10% off your first order.</p>
-          
+
           {/* <input
             type="email"
             placeholder="Your email"
             className="w-full px-3 py-2 rounded text-brand text-sm"
           />
           */}
+          
         </div>
       </div>
       <div className="text-center text-xs text-gray-400 py-4 border-t border-gray-700">

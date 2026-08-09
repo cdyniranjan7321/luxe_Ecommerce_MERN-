@@ -1,3 +1,4 @@
+
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Footer() {
@@ -5,6 +6,7 @@ export default function Footer() {
 
   const handleCategoryClick = (category) => {
     navigate(`/?category=${category}`);
+    
     // Scroll to products section
     setTimeout(() => {
       document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });

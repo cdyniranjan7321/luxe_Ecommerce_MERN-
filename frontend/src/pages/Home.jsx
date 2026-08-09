@@ -135,14 +135,14 @@ export default function Home() {
             { number: "500+", label: "Products" },
             { number: "50+", label: "Brands" },
             { number: "4.8★", label: "Average Rating" },
-      ].map((stat, index) => (
-        <div key={index}>
-          <div className="text-3xl md:text-4xl font-heading font-bold">{stat.number}</div>
-          <div className="text-sm text-gray-300">{stat.label}</div>
+           ].map((stat, index) => (
+            <div key={index}>
+             <div className="text-3xl md:text-4xl font-heading font-bold">{stat.number}</div>
+              <div className="text-sm text-gray-300">{stat.label}</div>
+            </div>
+          ))}
+         </div>
         </div>
-      ))}
-    </div>
-  </div>
 </section>
 
       {/* Testimonials Section */}

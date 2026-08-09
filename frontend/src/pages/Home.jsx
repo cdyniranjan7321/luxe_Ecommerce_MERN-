@@ -126,24 +126,24 @@ export default function Home() {
         </div>
       </section>
       
-{/* Stats Section */}
-<section className="py-16 bg-brand text-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-      {[
-        { number: "10K+", label: "Happy Customers" },
-        { number: "500+", label: "Products" },
-        { number: "50+", label: "Brands" },
-        { number: "4.8★", label: "Average Rating" },
-      ].map((stat, index) => (
-        <div key={index}>
-          <div className="text-3xl md:text-4xl font-heading font-bold">{stat.number}</div>
-          <div className="text-sm text-gray-300">{stat.label}</div>
+      {/* Stats Section */}
+       <section className="py-16 bg-brand text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {[
+            { number: "10K+", label: "Happy Customers" },
+            { number: "500+", label: "Products" },
+            { number: "50+", label: "Brands" },
+            { number: "4.8★", label: "Average Rating" },
+           ].map((stat, index) => (
+            <div key={index}>
+             <div className="text-3xl md:text-4xl font-heading font-bold">{stat.number}</div>
+              <div className="text-sm text-gray-300">{stat.label}</div>
+            </div>
+          ))}
+         </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+       </section>
 
       {/* Testimonials Section */}
       <section className="py-16">
